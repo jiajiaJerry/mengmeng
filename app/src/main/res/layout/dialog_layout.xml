@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="拨打电话"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:id="@+id/btn_call"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="10086"/>
+    <Button
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="50dp"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="取消"/>
+
+</LinearLayout>
