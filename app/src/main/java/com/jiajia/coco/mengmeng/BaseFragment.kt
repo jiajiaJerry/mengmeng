@@ -24,6 +24,8 @@ abstract class BaseFragment : Fragment() {
      */
     open fun init() {
 
+        
+
     }
 
     abstract fun getLayoutResId(): Int

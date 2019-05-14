@@ -9,7 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eebb2732-a912-4096-86ad-47ff137b907d" name="Default Changelist" comment="" />
+    <list default="true" id="eebb2732-a912-4096-86ad-47ff137b907d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="346">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="e#34#187#0" expanded="true" />
               </folding>
@@ -94,8 +96,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt" />
       </list>
     </option>
   </component>
@@ -311,6 +313,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -518,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/BaseFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="346">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="e#34#187#0" expanded="true" />
           </folding>
