@@ -8,6 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <!--Dialog-->
     <style name="btm_dialog" parent="@style/Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
