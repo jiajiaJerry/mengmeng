@@ -7,6 +7,7 @@ import android.support.v4.app.ActivityCompat
 import com.jiajia.coco.mengmeng.contract.LoginContract
 import com.jiajia.coco.mengmeng.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
@@ -16,8 +17,9 @@ class LoginActivity : BaseActivity(), LoginContract.View {
     private val loginPresenter = LoginPresenter(this)
 
     override fun init() {
-        login.setOnClickListener { login() }
-        password.setOnEditorActionListener { v, actionId, event ->
+        login.onClick { login() }
+        newUser.onClick { startActivity<RegisterActivity>() }
+        password.setOnEditorActionListener { _, _, _ ->
             login()
             true
         }
