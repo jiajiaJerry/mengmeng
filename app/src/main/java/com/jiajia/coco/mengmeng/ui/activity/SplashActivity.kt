@@ -1,7 +1,8 @@
-package com.jiajia.coco.mengmeng
+package com.jiajia.coco.mengmeng.ui.activity
 
 import android.os.Bundle
 import android.os.Handler
+import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.contract.SplashContract
 import com.jiajia.coco.mengmeng.presenter.SplashPresenter
 import org.jetbrains.anko.startActivity
@@ -22,7 +23,7 @@ class SplashActivity : BaseActivity() ,SplashContract.View{
         preserter.checkLoginStatus()
     }
 
-    override fun getLayoutResId(): Int =R.layout.activity_splash
+    override fun getLayoutResId(): Int = R.layout.activity_splash
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +34,7 @@ class SplashActivity : BaseActivity() ,SplashContract.View{
         handler.postDelayed({
             startActivity<LoginActivity>()
             finish()
-        },DELAY)
+        }, DELAY)
     }
 
     override fun onLoggedIn() {

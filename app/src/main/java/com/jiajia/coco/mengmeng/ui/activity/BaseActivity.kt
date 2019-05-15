@@ -1,4 +1,4 @@
-package com.jiajia.coco.mengmeng
+package com.jiajia.coco.mengmeng.ui.activity
 
 import android.app.ProgressDialog
 import android.content.Context

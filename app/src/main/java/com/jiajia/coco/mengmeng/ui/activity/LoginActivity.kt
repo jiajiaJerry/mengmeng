@@ -1,9 +1,10 @@
-package com.jiajia.coco.mengmeng
+package com.jiajia.coco.mengmeng.ui.activity
 
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
+import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.contract.LoginContract
 import com.jiajia.coco.mengmeng.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*

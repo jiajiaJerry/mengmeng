@@ -39,10 +39,10 @@ class RegisterPresenter(private val view: RegisterContract.View) : RegisterContr
             override fun done(p0: String?, p1: BmobException?) {
                 if (p1 == null) {
                     //注册到环信
-                    TLog.i("TAG", "onRegisterSuccess")
                     registerEaseMob(userName, password)
                 } else {
-                    view.onRegisterFailed()
+                    if (p1.errorCode == 401) view.onUserExist()
+                    else view.onRegisterFailed()
                 }
             }
 
@@ -52,13 +52,11 @@ class RegisterPresenter(private val view: RegisterContract.View) : RegisterContr
     private fun registerEaseMob(userName: String, password: String) {
         doAsync {
             try {
-                TLog.i("TAG", "onRegisterSuccess")
                 //注册失败会抛出HyphenateException
                 EMClient.getInstance().createAccount(userName, password)//同步方法
                 //注册成功
                 uiThread { view.onRegisterSuccess() }
             } catch (e: HyphenateException) {
-                TLog.i("TAG", "onRegisterFailed")
                 //注册失败
                 uiThread { view.onRegisterFailed() }
             }

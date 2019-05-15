@@ -1,8 +1,7 @@
-package com.jiajia.coco.mengmeng
+package com.jiajia.coco.mengmeng.ui.activity
 
 import android.os.Bundle
-import android.view.KeyEvent
-import android.widget.TextView
+import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.contract.RegisterContract
 import com.jiajia.coco.mengmeng.presenter.RegisterPresenter
 import kotlinx.android.synthetic.main.activity_register.*
@@ -53,6 +52,11 @@ class RegisterActivity : BaseActivity() ,RegisterContract.View{
     override fun onRegisterFailed() {
         dismissProgress()
         toast(R.string.register_failed)
+    }
+
+    override fun onUserExist() {
+        dismissProgress()
+        toast(R.string.user_already_exist)
     }
 
     override fun getLayoutResId(): Int = R.layout.activity_register
