@@ -59,15 +59,16 @@
         <!--<activity-->
                 <!--android:name=".FindActivity"-->
                 <!--android:screenOrientation="portrait"/>-->
-        <!--<provider-->
-                <!--android:name="cn.bmob.v3.util.BmobContentProvider"-->
-                <!--android:authorities="你的应用包名.BmobContentProvider" tools:ignore="ExportedContentProvider">-->
-        <!--</provider>-->
+        <provider
+                android:name="cn.bmob.v3.util.BmobContentProvider"
+                android:authorities="com.jiajia.coco.mengmeng.BmobContentProvider" tools:ignore="ExportedContentProvider">
+        </provider>
 
         <!-- 环信 -->
         <uses-library
                 android:name="org.apache.http.legacy"
-                android:required="false"/> <!-- 设置环信应用的AppKey -->
+                android:required="false"/>
+        <!-- 设置环信应用的AppKey -->
         <meta-data
                 android:name="EASEMOB_APPKEY"
                 android:value="198818#mengmeng"/> <!-- 声明SDK所需的service SDK核心功能 -->
