@@ -7,6 +7,8 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion compile_sdk_version
     buildToolsVersion build_tool_version
+    //use legacy for android 6.0
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.jiajia.coco.mengmeng"
         minSdkVersion min_sdk_version
@@ -40,4 +42,8 @@ dependencies {
     implementation('com.roughike:bottom-bar:2.3.1'){
         exclude module:'design'
     }
+    //环信
+    //Optional compile for GCM (Google Cloud Messaging).
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
+    implementation 'com.hyphenate:hyphenate-sdk:3.3.0'
 }

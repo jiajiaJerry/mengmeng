@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#环信混淆
+-keep class com.hyphenate.** {*;}
+-dontwarn  com.hyphenate.**

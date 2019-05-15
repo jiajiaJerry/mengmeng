@@ -1,7 +1,6 @@
 package com.jiajia.coco.mengmeng
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 
 /**
  * @author Create by Jerry
