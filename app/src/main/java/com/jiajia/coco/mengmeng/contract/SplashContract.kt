@@ -3,7 +3,7 @@ package com.jiajia.coco.mengmeng.contract
 /**
  * @author Create by Jerry
  * @date on 2019-05-15
- * @description Splash MVP 协议
+ * @description Splash界面协议
  */
 interface SplashContract {
 

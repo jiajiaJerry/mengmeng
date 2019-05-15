@@ -8,17 +8,17 @@ import org.jetbrains.anko.startActivity
 
 class SplashActivity : BaseActivity() ,SplashContract.View{
 
-    val preserter = SplashPresenter(this)
+    private val preserter = SplashPresenter(this)
 
     companion object {
-        val DELAY = 2000L
+        const val DELAY = 2000L
     }
 
-    val handler by lazy {
+    private val handler by lazy {
         Handler()
     }
 
-    init {
+    override fun init(){
         preserter.checkLoginStatus()
     }
 
