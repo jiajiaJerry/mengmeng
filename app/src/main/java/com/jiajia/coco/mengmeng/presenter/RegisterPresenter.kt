@@ -1,23 +1,20 @@
 package com.jiajia.coco.mengmeng.presenter
 
-import cn.bmob.v3.BmobQuery
+import cn.bmob.v3.exception.BmobException
+import cn.bmob.v3.listener.SaveListener
+import com.hyphenate.chat.EMClient
+import com.hyphenate.exceptions.HyphenateException
+import com.jiajia.coco.mengmeng.data.Person
 import com.jiajia.coco.mengmeng.contract.RegisterContract
 import com.jiajia.coco.mengmeng.extentions.isValidPassword
 import com.jiajia.coco.mengmeng.extentions.isValidUserName
-import cn.bmob.v3.exception.BmobException
-import cn.bmob.v3.listener.SaveListener
-import cn.bmob.v3.BmobUser
-import com.hyphenate.chat.EMClient
-import com.hyphenate.exceptions.HyphenateException
-import com.jiajia.coco.mengmeng.bean.Person
-import com.jiajia.coco.mengmeng.utils.TLog
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 
 /**
  * @author Create by Jerry
  * @date on 2019-05-15
- * @description
+ * @description 注册Present层
  */
 class RegisterPresenter(private val view: RegisterContract.View) : RegisterContract.Persenter {
     override fun register(userName: String, password: String, confirmPassword: String) {
@@ -32,9 +29,7 @@ class RegisterPresenter(private val view: RegisterContract.View) : RegisterContr
     }
 
     private fun registerBmob(userName: String, password: String) {
-        val p = Person()
-        p.name = userName
-        p.password = password
+        val p = Person(userName,password)
         p.save(object : SaveListener<String>() {
             override fun done(p0: String?, p1: BmobException?) {
                 if (p1 == null) {

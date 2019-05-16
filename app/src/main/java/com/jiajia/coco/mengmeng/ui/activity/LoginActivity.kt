@@ -83,7 +83,4 @@ class LoginActivity : BaseActivity(), LoginContract.View {
 
     override fun getLayoutResId(): Int = R.layout.activity_login
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 }

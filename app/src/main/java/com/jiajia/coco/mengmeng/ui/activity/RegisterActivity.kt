@@ -10,7 +10,7 @@ import org.jetbrains.anko.toast
 
 class RegisterActivity : BaseActivity() ,RegisterContract.View{
 
-    val registerPresenter = RegisterPresenter(this)
+    private val registerPresenter = RegisterPresenter(this)
 
     override fun init() {
         register.onClick { register() }

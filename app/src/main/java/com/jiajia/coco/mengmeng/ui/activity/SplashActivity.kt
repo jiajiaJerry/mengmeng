@@ -1,6 +1,5 @@
 package com.jiajia.coco.mengmeng.ui.activity
 
-import android.os.Bundle
 import android.os.Handler
 import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.contract.SplashContract
@@ -25,9 +24,6 @@ class SplashActivity : BaseActivity() ,SplashContract.View{
 
     override fun getLayoutResId(): Int = R.layout.activity_splash
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     //延迟2s跳转到登录界面
     override fun onNotLoggedIn() {

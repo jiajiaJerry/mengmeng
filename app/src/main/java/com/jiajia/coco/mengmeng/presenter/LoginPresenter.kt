@@ -1,6 +1,5 @@
 package com.jiajia.coco.mengmeng.presenter
 
-import com.hyphenate.EMCallBack
 import com.hyphenate.chat.EMClient
 import com.jiajia.coco.mengmeng.adapter.EMCallBackAdapter
 import com.jiajia.coco.mengmeng.contract.LoginContract
@@ -10,7 +9,7 @@ import com.jiajia.coco.mengmeng.extentions.isValidUserName
 /**
  * @author Create by Jerry
  * @date on 2019-05-15
- * @description
+ * @description 登录Present层
  */
 class LoginPresenter(private val view: LoginContract.View) : LoginContract.Presenter {
     override fun login(userName: String, password: String) {

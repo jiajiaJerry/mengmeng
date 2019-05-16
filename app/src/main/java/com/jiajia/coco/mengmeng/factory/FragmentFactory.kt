@@ -9,7 +9,7 @@ import com.jiajia.coco.mengmeng.ui.fragment.DynamicFragment
 /**
  * @author Create by Jerry
  * @date on 2019-05-15
- * @description
+ * @description Fragment工厂类
  */
 class FragmentFactory private constructor(){
 

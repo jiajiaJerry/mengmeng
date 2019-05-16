@@ -9,7 +9,7 @@ import android.view.ViewGroup
 /**
  * @author Create by Jerry
  * @date on 2019-05-14
- * @description
+ * @description  Fragment基类
  */
 abstract class BaseFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =

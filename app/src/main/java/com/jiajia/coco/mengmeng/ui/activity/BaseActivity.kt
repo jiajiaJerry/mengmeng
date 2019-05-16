@@ -14,11 +14,11 @@ import android.view.inputmethod.InputMethodManager
  */
 abstract class BaseActivity : AppCompatActivity() {
 
-    val progressDialog by lazy {
+    private val progressDialog by lazy {
         ProgressDialog(this)
     }
 
-    val inputMethodManager by lazy {
+    private val inputMethodManager by lazy {
         getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
 
