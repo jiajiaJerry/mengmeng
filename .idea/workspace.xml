@@ -13,11 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eebb2732-a912-4096-86ad-47ff137b907d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ConversationAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,56 +41,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-834">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding>
-                <element signature="e#44#305#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="141" column="41" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="41" />
+            <state relative-caret-position="342">
+              <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ConversationAdapter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#46#717#0" expanded="true" />
+                <element signature="e#42#357#0" expanded="true" />
+                <element signature="e#898#922#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hyphenate/hyphenate-sdk/3.3.0/ecc9549c660823e07d6fee138901a40a6908d83a/hyphenate-sdk-3.3.0-sources.jar!/com/hyphenate/chat/EMConversation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-              <folding>
-                <element signature="e#42#453#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1757">
+              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.44/b33ecab57d06517f8b2a643b2a75be236fec5bee/BaseRecyclerViewAdapterHelper-2.9.44-sources.jar!/com/chad/library/adapter/base/BaseQuickAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ContactListAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="1855" column="72" selection-start-line="1855" selection-start-column="67" selection-end-line="1855" selection-end-column="72" />
+            <state relative-caret-position="216">
+              <caret line="12" column="141" selection-start-line="12" selection-start-column="130" selection-end-line="12" selection-end-column="141" />
             </state>
           </provider>
         </entry>
@@ -124,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/utils/TLog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/RegisterContract.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/RegisterActivity.kt" />
@@ -135,7 +128,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/widget/ContactListItemView.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/factory/FragmentFactory.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/LoginPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/SplashPresenter.kt" />
@@ -143,7 +135,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/RegisterActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/BaseFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/app/MengApplication.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/utils/TLog.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/LoginActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/bean/Person.kt" />
@@ -175,6 +166,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ConversationAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt" />
       </list>
     </option>
   </component>
@@ -366,7 +360,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="9fd297a67d93" />
+    <property name="device.picker.selection" value="1f4a94f2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Dependencies" />
@@ -678,53 +672,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="创建子界面" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_contacts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/widget/SlideBar.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-          <folding>
-            <element signature="e#41#354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_friend.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/LoginPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/AddFriendContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22565aa292315289f664e29663e932d0/jars/libs/BmobSDK_3.7.3-rc1_20190424.jar!/cn/bmob/v3/listener/FindListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/app/IMApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1027,13 +974,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ContactListAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.44/b33ecab57d06517f8b2a643b2a75be236fec5bee/BaseRecyclerViewAdapterHelper-2.9.44-sources.jar!/com/chad/library/adapter/base/BaseQuickAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1070,11 +1010,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="141" column="41" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="41" />
+        <state relative-caret-position="390">
+          <caret line="140" column="42" lean-forward="true" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
           <folding>
             <element signature="e#46#717#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ContactListAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="141" selection-start-line="12" selection-start-column="130" selection-end-line="12" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_contact_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hyphenate/hyphenate-sdk/3.3.0/ecc9549c660823e07d6fee138901a40a6908d83a/hyphenate-sdk-3.3.0-sources.jar!/com/hyphenate/chat/EMConversation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1757">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_conversation_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ConversationAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#42#357#0" expanded="true" />
+            <element signature="e#898#922#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ConversationFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
         </state>
       </provider>
     </entry>
