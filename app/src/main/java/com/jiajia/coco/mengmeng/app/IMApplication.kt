@@ -1,10 +1,8 @@
 package com.jiajia.coco.mengmeng.app
 
-import android.app.ActivityManager
-import android.app.Application
-import android.app.Notification
-import android.app.NotificationManager
+import android.app.*
 import android.content.Context
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.media.AudioManager
 import android.media.SoundPool
@@ -12,6 +10,7 @@ import cn.bmob.v3.Bmob
 import com.hyphenate.chat.*
 import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.adapter.EMMessageListenerAdapter
+import com.jiajia.coco.mengmeng.ui.activity.ChatActivity
 import com.jiajia.coco.mengmeng.utils.TLog
 
 /**
@@ -58,11 +57,20 @@ class IMApplication : Application() {
             if (it.type == EMMessage.Type.TXT) {
                 contentText = (it.body as EMTextMessageBody).message
             }
+            val intent = Intent(this,ChatActivity::class.java)
+            intent.putExtra("userName",it.userName)
+
+            val taskStackBuilder= TaskStackBuilder.create(this).addParentStack(ChatActivity::class.java).addNextIntent(intent)
+            val pendingIntent = taskStackBuilder.getPendingIntent(0,PendingIntent.FLAG_CANCEL_CURRENT)
+
+//            val pendingIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_CANCEL_CURRENT)
             val notification = Notification.Builder(this)
                 .setContentTitle(getString(R.string.receive_new_message))
                 .setContentText(contentText)
                 .setLargeIcon(BitmapFactory.decodeResource(resources, R.mipmap.avatar1))
                 .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true)
                 .notification
             notificationManager.notify(1, notification)
         }
