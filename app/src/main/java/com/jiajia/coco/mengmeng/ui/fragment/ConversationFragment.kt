@@ -23,6 +23,7 @@ import org.jetbrains.anko.support.v4.startActivity
  */
 class ConversationFragment : BaseFragment() {
     override fun getLayoutResId(): Int = R.layout.fragment_conversation
+
     lateinit var adapter: ConversationAdapter
     private val conversations = mutableListOf<EMConversation>()
     private val messageListener = object : EMMessageListenerAdapter() {

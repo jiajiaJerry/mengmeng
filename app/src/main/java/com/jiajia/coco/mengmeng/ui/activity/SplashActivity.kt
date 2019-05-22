@@ -8,6 +8,8 @@ import org.jetbrains.anko.startActivity
 
 class SplashActivity : BaseActivity() ,SplashContract.View{
 
+    override fun getLayoutResId(): Int = R.layout.activity_splash
+
     private val preserter = SplashPresenter(this)
 
     companion object {
@@ -21,9 +23,6 @@ class SplashActivity : BaseActivity() ,SplashContract.View{
     override fun init(){
         preserter.checkLoginStatus()
     }
-
-    override fun getLayoutResId(): Int = R.layout.activity_splash
-
 
     //延迟2s跳转到登录界面
     override fun onNotLoggedIn() {

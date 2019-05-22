@@ -23,9 +23,6 @@ abstract class BaseFragment : Fragment() {
      * 初始化公共功能
      */
     open fun init() {
-
-
-
     }
 
     abstract fun getLayoutResId(): Int

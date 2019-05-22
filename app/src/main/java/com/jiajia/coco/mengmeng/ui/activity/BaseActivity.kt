@@ -32,7 +32,6 @@ abstract class BaseActivity : AppCompatActivity() {
      * 初始化公共功能
      */
     open fun init() {
-
     }
 
     /**

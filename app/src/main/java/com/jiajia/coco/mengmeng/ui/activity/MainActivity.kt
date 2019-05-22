@@ -1,6 +1,9 @@
 package com.jiajia.coco.mengmeng.ui.activity
 
 import android.annotation.SuppressLint
+import com.hyphenate.EMConnectionListener
+import com.hyphenate.EMContactListener
+import com.hyphenate.EMError
 import com.hyphenate.chat.EMClient
 import com.hyphenate.chat.EMMessage
 import com.jiajia.coco.mengmeng.R
@@ -8,6 +11,8 @@ import com.jiajia.coco.mengmeng.adapter.EMMessageListenerAdapter
 import com.jiajia.coco.mengmeng.factory.FragmentFactory
 import com.jiajia.coco.mengmeng.utils.TLog
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 /**
  * @author Create by Jerry
@@ -32,6 +37,20 @@ class MainActivity : BaseActivity() {
         }
 
         EMClient.getInstance().chatManager().addMessageListener(messageListener)
+        EMClient.getInstance().addConnectionListener(object : EMConnectionListener {
+            override fun onConnected() {
+
+            }
+
+            override fun onDisconnected(errorCode: Int) {
+                if (errorCode == EMError.USER_LOGIN_ANOTHER_DEVICE) {
+                    //多设备登录,跳转登录界面
+                    startActivity<LoginActivity>()
+                    finish()
+                }
+            }
+
+        })
     }
 
     override fun onResume() {

@@ -23,6 +23,17 @@ class ChatActivity : BaseActivity(), ChatContract.View {
     override fun getLayoutResId(): Int = R.layout.activity_chat
 
     val present = ChatPresenter(this)
+
+    override fun init() {
+        super.init()
+        initHeader()
+        initEditText()
+        initRecyclerView()
+        EMClient.getInstance().chatManager().addMessageListener(msgListener)
+        send.onClick { send() }
+        present.loadMessages(userName)
+    }
+
     lateinit var userName: String
     lateinit var adapter: ChatListAdapter
 
@@ -39,16 +50,6 @@ class ChatActivity : BaseActivity(), ChatContract.View {
 
             }
         }
-    }
-
-    override fun init() {
-        super.init()
-        initHeader()
-        initEditText()
-        initRecyclerView()
-        EMClient.getInstance().chatManager().addMessageListener(msgListener)
-        send.onClick { send() }
-        present.loadMessages(userName)
     }
 
     private fun initRecyclerView() {

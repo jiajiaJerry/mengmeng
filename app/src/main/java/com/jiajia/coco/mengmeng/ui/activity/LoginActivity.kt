@@ -15,6 +15,8 @@ import org.jetbrains.anko.toast
 
 class LoginActivity : BaseActivity(), LoginContract.View {
 
+    override fun getLayoutResId(): Int = R.layout.activity_login
+
     private val loginPresenter = LoginPresenter(this)
 
     override fun init() {
@@ -81,6 +83,5 @@ class LoginActivity : BaseActivity(), LoginContract.View {
         toast(R.string.login_failed)
     }
 
-    override fun getLayoutResId(): Int = R.layout.activity_login
 
 }

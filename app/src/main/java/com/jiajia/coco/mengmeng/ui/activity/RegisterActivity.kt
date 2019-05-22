@@ -10,6 +10,8 @@ import org.jetbrains.anko.toast
 
 class RegisterActivity : BaseActivity() ,RegisterContract.View{
 
+    override fun getLayoutResId(): Int = R.layout.activity_register
+
     private val registerPresenter = RegisterPresenter(this)
 
     override fun init() {
@@ -59,9 +61,4 @@ class RegisterActivity : BaseActivity() ,RegisterContract.View{
         toast(R.string.user_already_exist)
     }
 
-    override fun getLayoutResId(): Int = R.layout.activity_register
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 }

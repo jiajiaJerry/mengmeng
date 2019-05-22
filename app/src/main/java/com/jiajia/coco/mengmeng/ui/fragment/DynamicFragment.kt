@@ -17,6 +17,7 @@ import org.jetbrains.anko.toast
  * @description 动态界面
  */
 class DynamicFragment : BaseFragment() {
+    
     override fun getLayoutResId(): Int = R.layout.fragment_dynamic
 
     override fun init() {
@@ -31,15 +32,15 @@ class DynamicFragment : BaseFragment() {
     private fun logout() {
         EMClient.getInstance().logout(true, object : EMCallBackAdapter() {
             override fun onSuccess() {
-                context!!.runOnUiThread {
+                context?.runOnUiThread {
                     toast(R.string.logout_success)
-                    context!!.startActivity<LoginActivity>()
-                    activity!!.finish()
+                    context?.startActivity<LoginActivity>()
+                    activity?.finish()
                 }
             }
 
             override fun onError(code: Int, error: String?) {
-                context!!.runOnUiThread { toast(R.string.logout_failed) }
+                context?.runOnUiThread { toast(R.string.logout_failed) }
             }
         })
     }
