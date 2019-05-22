@@ -10,8 +10,7 @@ import com.jiajia.coco.mengmeng.data.ContactListItem
  * @date on 2019-05-15
  * @description  联系人Item
  */
-class ContactListAdapter(layoutResId: Int, data: MutableList<ContactListItem>) :
-    BaseQuickAdapter<ContactListItem, BaseViewHolder>(layoutResId, data) {
+class ContactListAdapter(layoutResId: Int, data: MutableList<ContactListItem>) :BaseQuickAdapter<ContactListItem, BaseViewHolder>(layoutResId, data) {
 
     override fun convert(helper: BaseViewHolder, item: ContactListItem?) {
         if (item != null) {

@@ -36,7 +36,7 @@ class ContactFragment : BaseFragment(), ContactContract.View {
         super.init()
         headerTitle.text = getString(R.string.contact)
         add.visibility = View.VISIBLE
-        add.onClick { startActivity<AddFriendActivity>() }
+        add.setOnClickListener { startActivity<AddFriendActivity>() }
 
         //下拉刷新
         swipeRefreshLayout.apply {
