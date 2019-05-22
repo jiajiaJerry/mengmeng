@@ -10,6 +10,7 @@ interface ChatContract {
     interface Presenter : BasePresenter {
         fun sendMessage(contact: String, message: String)
         fun loadMessages(userName: String)
+        fun loadMoreMessage(userName: String)
     }
 
     interface View {
@@ -18,5 +19,6 @@ interface ChatContract {
         fun onSendMessageFailed()
         fun onScrollToBottom()
         fun onMessageLoad()
+        fun onLoadMoreMessage(size:Int)
     }
 }

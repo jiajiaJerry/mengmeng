@@ -9,7 +9,6 @@ import com.hyphenate.chat.EMTextMessageBody
 import com.hyphenate.util.DateUtils
 import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.data.Message
-import com.jiajia.coco.mengmeng.utils.TLog
 import java.util.*
 
 /**
@@ -25,12 +24,10 @@ class ChatListAdapter(data: MutableList<Message>) : BaseMultiItemQuickAdapter<Me
     }
 
     private fun isShowTimestamp(position: Int): Boolean {
-        TLog.i(position)
         var showTimestamp = true
         if (position > 0) {
             showTimestamp = !DateUtils.isCloseEnough(data[position].message.msgTime, data[position - 1].message.msgTime)
         }
-        TLog.i(showTimestamp)
         return showTimestamp
     }
 

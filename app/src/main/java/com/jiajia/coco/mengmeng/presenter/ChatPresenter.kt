@@ -5,6 +5,7 @@ import com.hyphenate.chat.EMMessage
 import com.jiajia.coco.mengmeng.adapter.EMCallBackAdapter
 import com.jiajia.coco.mengmeng.contract.ChatContract
 import com.jiajia.coco.mengmeng.data.Message
+import com.jiajia.coco.mengmeng.utils.TLog
 import org.jetbrains.anko.doAsync
 
 
@@ -14,8 +15,12 @@ import org.jetbrains.anko.doAsync
  * @description
  */
 class ChatPresenter(val view: ChatContract.View) : ChatContract.Presenter {
+    companion object {
+        val PAGE_SIZE = 10
+    }
 
     val messages = mutableListOf<Message>()
+    val tmp = mutableListOf<Message>()
 
     override fun sendMessage(contact: String, message: String) {
         //创建一条文本消息，content为消息文字内容，toChatUsername为对方用户或者群聊的id，后文皆是如此
@@ -53,6 +58,27 @@ class ChatPresenter(val view: ChatContract.View) : ChatContract.Presenter {
                 }
             }
             view.onMessageLoad()
+        }
+    }
+
+    override fun loadMoreMessage(userName: String) {
+        doAsync {
+            val conversation = EMClient.getInstance().chatManager().getConversation(userName)
+            val startMsgId = messages[0].message.msgId
+            //获取此会话的所有消息
+            val m = conversation.loadMoreMsgFromDB(startMsgId, PAGE_SIZE)
+
+            m.let { list ->
+                if (list.size > 0) {
+                    tmp.clear()
+                    list!!.forEach {
+                        val message = Message(it)
+                        tmp.add(message)
+                    }
+                    messages.addAll(0, tmp)
+                }
+            }
+            view.onLoadMoreMessage(m.size)
         }
     }
 }

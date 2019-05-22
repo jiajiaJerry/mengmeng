@@ -13,16 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eebb2732-a912-4096-86ad-47ff137b907d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/EMMessageListenerAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/data/Message.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ContactListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ContactListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/EMCallBackAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/EMCallBackAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ContactFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ContactFragment.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,22 +45,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="-834">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="e#44#305#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
-              <folding>
-                <element signature="e#46#717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +57,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="504">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="141" column="41" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="41" />
+              <folding>
+                <element signature="e#46#717#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="384">
+              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
               <folding>
                 <element signature="e#42#453#0" expanded="true" />
               </folding>
@@ -176,10 +171,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/fragment/ContactFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/EMMessageListenerAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/data/Message.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt" />
       </list>
     </option>
   </component>
@@ -1046,27 +1041,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/adapter/ChatListAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="384">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
           <folding>
             <element signature="e#42#453#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/contract/ChatContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/presenter/ChatPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="-834">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="e#44#305#0" expanded="true" />
           </folding>
@@ -1076,7 +1071,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jiajia/coco/mengmeng/ui/activity/ChatActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+          <caret line="141" column="41" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="41" />
           <folding>
             <element signature="e#46#717#0" expanded="true" />
           </folding>

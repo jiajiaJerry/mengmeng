@@ -1,6 +1,7 @@
 package com.jiajia.coco.mengmeng.ui.activity
 
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -54,6 +55,21 @@ class ChatActivity : BaseActivity(), ChatContract.View {
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(context)
+            addOnScrollListener(object : RecyclerView.OnScrollListener() {
+                override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                    //当RecyclerView为空闲状态
+                    //检查是否滑到顶部,加载更多数据
+                    if (newState==RecyclerView.SCROLL_STATE_IDLE){
+                        //如果第一个可见条目的位置是0,为顶部
+                        val linearLayoutMessage = layoutManager as LinearLayoutManager
+                        if (linearLayoutMessage.findFirstVisibleItemPosition()==0){
+                            //加载更多数据
+                            present.loadMoreMessage(userName)
+                        }
+                    }
+                }
+            })
+
         }
         adapter = ChatListAdapter(present.messages)
         recyclerView.adapter = adapter
@@ -117,6 +133,13 @@ class ChatActivity : BaseActivity(), ChatContract.View {
         runOnUiThread {
             adapter.notifyDataSetChanged()
             onScrollToBottom()
+        }
+    }
+
+    override fun onLoadMoreMessage(size:Int) {
+        runOnUiThread {
+            adapter.notifyDataSetChanged()
+            recyclerView.scrollToPosition(size)
         }
     }
 
