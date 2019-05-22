@@ -49,6 +49,7 @@ class ChatPresenter(val view: ChatContract.View) : ChatContract.Presenter {
     override fun loadMessages(userName: String) {
         doAsync {
             val conversation = EMClient.getInstance().chatManager().getConversation(userName)
+            conversation.markAllMessagesAsRead()
             //获取此会话的所有消息
             val m = conversation.allMessages
             m.let { list ->

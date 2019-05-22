@@ -1,16 +1,20 @@
 package com.jiajia.coco.mengmeng.ui.fragment
 
 import android.support.v7.widget.LinearLayoutManager
+import android.view.View
+import com.chad.library.adapter.base.BaseQuickAdapter
 import com.hyphenate.chat.EMClient
 import com.hyphenate.chat.EMConversation
 import com.hyphenate.chat.EMMessage
 import com.jiajia.coco.mengmeng.R
 import com.jiajia.coco.mengmeng.adapter.ConversationAdapter
 import com.jiajia.coco.mengmeng.adapter.EMMessageListenerAdapter
+import com.jiajia.coco.mengmeng.ui.activity.ChatActivity
 import kotlinx.android.synthetic.main.fragment_contacts.*
 import kotlinx.android.synthetic.main.header.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.support.v4.runOnUiThread
+import org.jetbrains.anko.support.v4.startActivity
 
 /**
  * @author Create by Jerry
@@ -37,7 +41,16 @@ class ConversationFragment : BaseFragment() {
         adapter = ConversationAdapter(R.layout.view_conversation_item, conversations)
         recyclerView.adapter = adapter
 
+        adapter.onItemClickListener =
+            BaseQuickAdapter.OnItemClickListener { _, _, position ->
+                startActivity<ChatActivity>("userName" to conversations[position].conversationId())
+            }
+
         EMClient.getInstance().chatManager().addMessageListener(messageListener)
+    }
+
+    override fun onResume() {
+        super.onResume()
         loadConversations()
     }
 
